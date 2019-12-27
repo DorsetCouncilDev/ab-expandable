@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["main.scss"],"sourcesContent":[".ab-expandable .ab-exapndable-button[aria-expanded=true] + .ab-expandable-area {\r\n    display: block;\r\n}\r\n.ab-expandable .ab-exapndable-button + .ab-expandable-area {\r\n    display: none;\r\n}\r\n"],"file":"../main.scss"}

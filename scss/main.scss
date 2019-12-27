@@ -1,0 +1,21 @@
+body {
+    font-family: arial;
+    padding: 30px;
+  }
+  
+  .ab-expandable {
+    .ab-exapndable-button {
+      &:hover {
+        cursor: default;
+        color: blue;
+      }
+      &[aria-expanded="true"] {
+        + .ab-expandable-area {
+          display: block;
+        }
+      }
+      + .ab-expandable-area {
+        display: none;
+      }
+    }
+  }

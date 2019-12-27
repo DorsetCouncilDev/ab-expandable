@@ -1,0 +1,15 @@
+body {
+  font-family: arial;
+  padding: 30px; }
+
+.ab-expandable .ab-exapndable-button:hover {
+  cursor: default;
+  color: blue; }
+
+.ab-expandable .ab-exapndable-button[aria-expanded="true"] + .ab-expandable-area {
+  display: block; }
+
+.ab-expandable .ab-exapndable-button + .ab-expandable-area {
+  display: none; }
+
+/*# sourceMappingURL=sourcemaps/main.css.map */
