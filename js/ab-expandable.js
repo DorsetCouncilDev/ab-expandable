@@ -1,10 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-    
-    
-    const expandables = document.querySelectorAll(".ab-exapndable-button");
+    const expandables = document.getElementsByClassName("ab-exapndable-button");
     for(var i=0; i<expandables.length;i++){
-
-        expandables[i].setAttribute("aria-expanded",false);
         expandables[i].nextElementSibling.style.display = "none";
         expandables[i].addEventListener("click", function(evt) {
             var btn = evt.target;
