@@ -18,6 +18,10 @@
     "node-sass": "^4.12.0"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1"
+    "@types/yargs": "^15.0.0",
+    "bootstrap": "^4.3.1",
+    "gulp-jest": "^4.0.3",
+    "jest-cli": "^24.9.0",
+    "yargs-parser": "^16.1.0"
   }
 }

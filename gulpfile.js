@@ -6,6 +6,19 @@ var bootstrap = 'node_modules/bootstrap/scss';
 
 var browserSync = require('browser-sync').create();
 
+
+var jest = require('gulp-jest').default;
+ 
+function test(){
+   gulp.src('tests/test.js').pipe(jest({
+    "preprocessorIgnorePatterns": [
+      "<rootDir>/dist/", "<rootDir>/node_modules/"
+    ],
+    "automock": false
+  }));
+}
+
+
 const { watch } = require('gulp');
 
     function startServer(){
@@ -35,6 +48,7 @@ const { watch } = require('gulp');
         startServer();
         watch('scss/*.scss',gulp.series(compileSCSS));
         watch('*.html').on("change",reloadBroweserSync);
+        watch('js/*.js',gulp.series(test));
     }
 
     exports.default = defaultTask;

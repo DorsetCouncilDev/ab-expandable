@@ -7,24 +7,34 @@ beforeAll(() => {
     abExpanded();   
 });
 
-test('check expanded', () => {
+test('initial state check aria expanded false', () => {
+    var button = document.getElementsByClassName("ab-exapndable-button")[0];
+    expect(button.getAttribute("aria-expanded")).toBe("false"); 
+});
+
+test('initial state check display none', () => {
+    var button = document.getElementsByClassName("ab-expandable-area")[0];
+    expect(button.style.display).toBe("none"); 
+});
+
+test('check aria expanded true', () => {
     var button = document.getElementsByClassName("ab-exapndable-button")[0];
     button.click();
     expect(button.getAttribute("aria-expanded")).toBe("true"); 
 });
 
-test('check display', () => {
+test('check display block', () => {
     var button = document.getElementsByClassName("ab-expandable-area")[0];
     expect(button.style.display).toBe("block"); 
 });
 
-test('check not expanded', () => {
+test('check aria expanded false', () => {
     var button = document.getElementsByClassName("ab-exapndable-button")[0];
     button.click();
     expect(button.getAttribute("aria-expanded")).toBe("false");
 });
 
-test('check no display', () => {
+test('check display none', () => {
     var button = document.getElementsByClassName("ab-expandable-area")[0];
     expect(button.style.display).toBe("none"); 
 });
