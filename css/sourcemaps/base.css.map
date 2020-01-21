@@ -1,0 +1,1 @@
+{"version":3,"names":[],"mappings":"","sources":["base.css"],"sourcesContent":["h1 {\n  font-size: 2rem;\n  margin-bottom: 1rem;\n  font-weight: 600; }\n\n.ab-exapndable-button {\n  margin: 1.5rem 0; }\n\n.ab-expandable {\n  margin: 2rem 0; }\n"],"file":"../base.css"}

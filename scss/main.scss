@@ -12,9 +12,10 @@ body {
       &[aria-expanded="true"] {
         + .ab-expandable-area {
           display: block;
+      
         }
       }
-    
+      
     }
   }
   

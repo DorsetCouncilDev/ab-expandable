@@ -1,13 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Example expandable</title>
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/main.css" rel="stylesheet" type="text/css"> 
+    <link href="css/base.css" rel="stylesheet" type="text/css"> 
 
     <script src="js/ab-expandable.js"></script>
 </head>
 <body>  
+  <main>
+
+    <h1>ab-expandable.js</h1>
+
     <div class="ab-expandable">
         <div class="ab-exapndable-button" role="button" aria-expanded="false" aria-controls="expand1">Expand me</div>
         <div class="ab-expandable-area" id="expand1">Expanded content 1</div>
@@ -25,8 +31,9 @@
       
       <div class="ab-expandable">
         <button class="ab-exapndable-button" aria-expanded="false" aria-controls="expand4">Expand me 4</button>
-        <div class="ab-expandable-area" id="expand4">Expanded content 4</div>
+        <div class="ab-expandable-area ab-expandable-area-smooth" id="expand4">Expanded content 4</div>
       </div>
+    </main>
 </body>
 
 </html>

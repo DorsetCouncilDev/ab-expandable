@@ -46,7 +46,7 @@ const { watch } = require('gulp');
     function defaultTask(){
         compileSCSS();
         startServer();
-        watch('scss/*.scss',gulp.series(compileSCSS));
+        watch('scss/*.scss',gulp.series([compileSCSS,test]));
         watch('*.html').on("change",reloadBroweserSync);
         watch('js/*.js',gulp.series(test));
     }
