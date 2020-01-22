@@ -1,10 +1,10 @@
-const abExpanded = require('../js/ab-expandable'); 
+const initialiseExpandables = require('../js/ab-expandable'); 
 
 beforeAll(() => {
     document.body.innerHTML = '<div class="ab-expandable">'+
     '<div class="ab-exapndable-button" role="button" aria-expanded="false" aria-controls="expand1">Expand me</div>'+
     '<div class="ab-expandable-area" id="expand1">Expanded content 1</div></div>';
-    abExpanded();   
+    initialiseExpandables();   
 });
 
 test('initial state check aria expanded false', () => {
