@@ -1,8 +1,7 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var sourcemaps = require('gulp-sourcemaps');
-var sassGlob = require('gulp-sass-glob');
-var bootstrap = 'node_modules/bootstrap/scss';
+
 
 var browserSync = require('browser-sync').create();
 
@@ -25,10 +24,11 @@ const { watch } = require('gulp');
     browserSync.init({
         server:{},
         open:false
-    })
+    });
 }
 
-    function reloadBroweserSync(cb){
+
+    function reloadBroweserSync(){
         browserSync.reload();
     }
     
@@ -39,7 +39,7 @@ const { watch } = require('gulp');
         // .pipe(sass({includePaths: [bootstrap],outputStyle: 'compressed'}))
         .pipe(sourcemaps.init())
         .pipe(sourcemaps.write("sourcemaps"))
-        .pipe(gulp.dest("css"))
+        .pipe(gulp.dest("css"));
         
     }
 
