@@ -2,6 +2,7 @@
 
 A generic expandable component to reveal and hide content under a particular heading.
 
+## Example
 ```html 
 <div class="ab-expandable">
     <div class="ab-exapndable-button" role="button" aria-expanded="false" aria-controls="expand1">Expand me</div>
